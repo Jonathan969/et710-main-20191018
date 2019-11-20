@@ -31,10 +31,10 @@ app.config(function($routeProvider) {
        templateUrl: 'app/views/services.html'
      })
 
-     .when('/test',
+     .when('/video',
         {
           controller: 'AdamController',
-          templateUrl: 'app/views/test.html'
+          templateUrl: 'app/views/video.html'
         })
 
 
