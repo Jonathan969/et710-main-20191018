@@ -74,14 +74,14 @@ app.controller('WorksController', ['$scope', function($scope) {
       	likes: 0,
       	dislikes: 0
        }
-];
-$scope.plusOne = function(index) {
-$scope.products[index].likes += 1;
+ ];
+ $scope.plusOne = function(index) {
+      $scope.products[index].likes += 1;
     	};
     	$scope.minusOne = function(index) {
     	$scope.products[index].dislikes += 1;
     	};
-    }]);
+}]);
 
 
 });
