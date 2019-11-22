@@ -1,16 +1,15 @@
-
 <!doctype html>
-<html ng-app="no-js" class="no-js" lang="en" dir="ltr">
+<html ng-app class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midterm ET-710</title>
+    <title>Parallax</title>
 
     <!-- *Begin AngularJS -->
         <script src="../js/vendor/angular-1.7.8/angular.min.js"></script>
         <script src="../js/vendor/angular-1.7.8/angular-animate.min.js"></script>
-        <script src="../js/vendor/angular-1.7.8/angular-route.min.js"></script>
+        <script src="../j.s/vendor/angular-1.7.8/angular-route.min.js"></script>
     <!-- *End AngularJS -->
 
     <!-- *Begin Datatables.net -->
@@ -37,6 +36,22 @@
     <link rel="stylesheet" href="../css/content.css">
     <link rel="stylesheet" href="../css/footer.css">
 
+    <style>
+    body, html {
+      height: 100%;
+    }
+    .parallax {
+      /* The image used */
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYq0PZV_lTA2lXJatFZIoO2fcklggXjmYY_MCdyoJ7IVOs0o_U&s');
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    </style>
   </head>
   <body>
 
@@ -59,11 +74,11 @@
         <li><a href="../index.html#!/works">Works</a></li>
         <li><a href="../index.html#!/news">News</a></li>
         <li><a href="../index.html#!/contact">Contact</a></li>
-        <li><a href="../index.html#!/video">Video</a></li>
+        <li><a href="../index.html#!/test">Test</a></li>
         <li>
-           <a href="categories/index.html">
-           <button type="button" class="button hollow topbar-responsive-button">Categories</button>
-          </a>
+          <a href="categories/index.html">
+          <button type="button" class="button hollow topbar-responsive-button">Categories</button>
+         </a>
         </li>
       </ul>
     </div>
@@ -84,7 +99,15 @@
 
 
     <!-- *Begin Content -->
+    <div class="parallax"></div>
 
+<div style="height:1000px;background-color:red;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+<div class="parallax"></div>
     <!-- *Begin AngularJS -->
     <div>
       <label>Name:</label>
@@ -157,7 +180,7 @@
               </div>
               <div class="column">
                 <ul class="menu marketing-site-footer-bottom-links">
-                  <li><a href="#">Home</a></li>
+                  <li><a href="../index.html">Home</a></li>
                   <li><a href="../index.html#!/about">About</a></li>
                   <li><a href="../index.html#!/services">Services</a></li>
                   <li><a href="../index.html#!/works">Works</a></li>
