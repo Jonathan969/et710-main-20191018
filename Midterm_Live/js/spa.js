@@ -83,7 +83,7 @@ app.controller('WorksController', ['$scope', function($scope) {
     	};
 }]);
 
-});
+
 app.controller('NewsController', function($scope){
   $scope.customerID = 5;
 });
